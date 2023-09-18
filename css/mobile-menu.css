@@ -1,0 +1,72 @@
+@media screen and (max-width: 767px) {
+
+    .mobile-menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F4FD;
+        z-index: 9999999999999999999999999999999999999999999999999;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    .mob-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 72px 16px 40px;
+        height: 100vh;
+        justify-content: space-between;
+    }
+    
+    .nav-list-mob .nav-item {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        margin-bottom: 40px;
+    }
+    
+    .nav-list-mob .current {
+        color: #404BBF;
+    }
+    
+    .nav-contacts-mob {
+        margin-bottom: 48px;
+    }
+    
+    .social-list-mob {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .contacts-list-mob {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+        color: #434455;
+    }
+    
+    .contacts-item-mob {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: inherit;
+    }
+    }
+    
+    @media screen and (min-width: 768px) {
+    
+        .mobile-menu-container {
+            display: none;
+        }
+        
+    }

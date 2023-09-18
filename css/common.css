@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.inner-wrapper {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 432px) {
+    .inner-wrapper {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.logotype {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-bottom: 72px;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.list-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    text-align: center;
+}
+
+.primary-text {
+    color: #434455;
+}
+
+.secondary-text {
+    color: #F4F4FD;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #404bbf;
+}
+
+.social-list-icon {
+    fill: #F4F4FD;
+}
+
+/*                     Tablet                    */
+
+@media screen and (min-width: 768px) {
+    .inner-wrapper {
+        width: 738px;
+    }
+}
+
+/*                     Desktop                        */
+
+@media screen and (min-width: 1158px) {
+
+    .list-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .inner-wrapper {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
